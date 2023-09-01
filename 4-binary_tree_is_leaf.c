@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_is_leaf - Checks if a node is a leaf, meaning it has no children.
+ * binary_tree_is_leaf - Checks if a node is a leaf meaning it has no children
  *
  * @node: Pointer to the node to be checked.
  *
