@@ -5,13 +5,13 @@
  *
  * @tree: Pointer to the root node of the tree to be checked.
  *
- * Description: This function determines whether a binary tree is "perfect," which
- * means that it has the same quantity of levels in the left and right subtrees,
- * and each non-leaf node has exactly two children. The function recursively checks
- * the left and right subtrees and ensures they are perfect and that their levels
+ * Description: function determines whether binary tree is "perfect," which
+ * means that it has the same quantity of levels in the left &right subtrees,
+ * and each non-leaf node has exactly 2children. function recursively checks
+ * the left and right subtrees &ensures they're perfect &that their levels
  * match. If the tree is empty (NULL), it is not considered perfect.
  *
- * Return: If the tree is perfect, it returns the level (height) of the tree as an
+ * Return: If the tree is perfect it returns level (height) of the tree as an
  * integer. If the tree is not perfect, it returns 0.
  */
 int tree_is_perfect(const binary_tree_t *tree)
@@ -45,7 +45,7 @@ int tree_is_perfect(const binary_tree_t *tree)
  * @tree: Pointer to the root node of the tree to be checked.
  *
  * Description: This function checks if a binary tree is perfect by calling the
- * `tree_is_perfect` function and returning 1 if the tree is perfect, or 0 if it
+ * `tree_is_perfect` function &returning 1 if the tree is perfect, or 0 if it
  * is not perfect or if the tree is empty (NULL).
  *
  * Return: 1 if the tree is perfect, 0 otherwise.
