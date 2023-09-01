@@ -7,7 +7,7 @@
  *
  * Description: This function calculates the depth of a specified node in a
  * binary tree by recursively traversing the tree from the given node to its
- * parent, incrementing the depth count with each step until it reaches the root.
+ * parent incrementing the depth count with each step until it reaches the root
  *
  * Return: The depth of the node as a size_t. If the node is the root or if the
  * node is NULL, the depth is 0.
