@@ -22,11 +22,17 @@ size_t binary_tree_leaves(const binary_tree_t *tree)
 	}
 	else
 	{
-		/* Recursively count the number of leaf nodes in the left and right subtrees*/
+	/**
+	 * Recursively count the number of leaf nodes
+	 * in the left and right subtrees
+	 */
 		left_leaves = binary_tree_leaves(tree->left);
 		right_leaves = binary_tree_leaves(tree->right);
 
-		/* Calculate the total leaf count by summing up the left and right subtree counts*/
+		/**
+		 * Calculate the total leaf count by summing up the left
+		 * and right subtree counts
+		 */
 		/* and adding 1 for the current node if it is a leaf itself*/
 		leaf_count = left_leaves + right_leaves;
 		return ((!left_leaves && !right_leaves) ? leaf_count + 1 : leaf_count);
