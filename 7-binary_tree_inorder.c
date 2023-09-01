@@ -16,12 +16,15 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (tree == NULL || func == NULL)
 	{
-		return; /* If the tree or the function is NULL, no further action is needed.*/
+		return;
+		/* If the tree or the function is NULL, no further action is needed.*/
 	}
 	else
 	{
-		binary_tree_inorder(tree->left, func);  /* Recursively traverse the left subtree*/
+		binary_tree_inorder(tree->left, func);
+		/* Recursively traverse the left subtree*/
 		func(tree->n); /* Apply the function to the current node's value */
-		binary_tree_inorder(tree->right, func); /* Recursively traverse the right subtree*/
+		binary_tree_inorder(tree->right, func);
+		/* Recursively traverse the right subtree*/
 	}
 }
